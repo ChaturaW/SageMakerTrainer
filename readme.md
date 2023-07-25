@@ -20,8 +20,10 @@
   - Open Amazon SageMaker Studio
   - Open **SageMaker Jumpstart > Models, notebooks, solutions** from the left menu
   - Select the model for deployment
-  - Select the instance type, endpoint name
-  - Press **Deploy**
+  - Update deployment configuration
+    e.g:
+    - Select the hosting instance type, endpoint name
+    - Press **Deploy**
     
     ![image](https://github.com/ChaturaW/SageMakerTrainer/assets/35030369/af042c66-2c13-4044-891a-667d99d214d1)
 
@@ -46,5 +48,5 @@
 - run the following command: `$ streamlit run app.py` 
 - run with the following argument if want to apply changes on the fly:  `$ streamlit run app.py --server.runOnSave true`
 - Open the URL:
-  `https://<sagemaker_domain_id>.studio.ap-southeast-2.sagemaker.aws/jupyter/default/proxy/8501/`
-  e.g. `https://d-rqgx355zgpuj.studio.ap-southeast-2.sagemaker.aws/jupyter/default/proxy/8501/`
+  - `https://<sagemaker_domain_id>.studio.ap-southeast-2.sagemaker.aws/jupyter/default/proxy/8501/`
+  - e.g. `https://d-rqgx355zgpuj.studio.ap-southeast-2.sagemaker.aws/jupyter/default/proxy/8501/`
