@@ -3,21 +3,22 @@
 - Create a domain in AWS SageMaker
 - Create a user profile in SageMaker studio under the domain
 - Create a custom notebook kernel. This is for creating a python 3.9 kernel (This step is important as some models will not work in the default python version comes with the notebook):
+  ```
   - conda create --name <ENVIRONMENT_NAME> python=3.9
   - conda activate <ENVIRONMENT_NAME>
   - conda install ipykernel
+  ```
 - Create a new notebook by selecting the new environment or change the opened notebook’s kernel from UI - e.g. select "Python [conda env:custom_py39_1]"
 
 
 # Model deployment
 
-- Deploy the model for embedding  
-- Deploy the LLM
-  The models can be deployed either from Jumpstart or using code (studio notebook/script).
+- The models for **embedding** and for answer generation (**LLM**) has to be deployed
+- The models can be deployed either from Jumpstart or using code (studio notebook/script).
 
   ## Deploy from Jumpstart:
   - Open Amazon SageMaker Studio
-  - Open *SageMaker Jumpstart > Models, notebooks, solutions* from the left menu
+  - Open **SageMaker Jumpstart > Models, notebooks, solutions** from the left menu
   - Select the model for deployment
   - Select the instance type, endpoint name
   - Press deploy
@@ -39,8 +40,8 @@
 
 # Running the steamlit app inside SageMaker studio
 - Open the System Terminal from AWS SageMaker studio
-- move inside the powersensor-chatbot folder
-- install streamlit (pip install streamlit)
+- move inside the app folder
+- install streamlit (`pip install streamlit`)
 - similarly install sagemaker, boto3, json
 - run the following command: $ streamlit run app.py 
 - run with the following argument if want to apply changes on the fly:  $ streamlit run app.py --server.runOnSave true
