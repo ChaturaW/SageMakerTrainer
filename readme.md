@@ -21,9 +21,11 @@
   - Select the model for deployment
   - Select the instance type, endpoint name
   - Press deploy
+    
     ![image](https://github.com/ChaturaW/SageMakerTrainer/assets/35030369/af042c66-2c13-4044-891a-667d99d214d1)
-
-  - The example notebook provided by Jumpstart as the model is deployed can be used for testing the deployment
+  
+  Deploy a model using a notebook:
+  - 
   
 - Test the deployment of the models
   - If deployed via Jumpstart - Test the deployment by running the example notebook given by Jumpstart 
