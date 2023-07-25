@@ -13,9 +13,9 @@
 
 - Deploy the model for embedding  
 - Deploy the LLM
-  NOTE: The models can be deployed either from Jumpstart or using code (studio notebook/script).
+  The models can be deployed either from Jumpstart or using code (studio notebook/script).
 
-  Deploy from Jumpstart:
+  ## Deploy from Jumpstart:
   - Open Amazon SageMaker Studio
   - Open *SageMaker Jumpstart > Models, notebooks, solutions* from the left menu
   - Select the model for deployment
