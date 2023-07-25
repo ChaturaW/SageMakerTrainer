@@ -21,7 +21,7 @@
   - Open **SageMaker Jumpstart > Models, notebooks, solutions** from the left menu
   - Select the model for deployment
   - Select the instance type, endpoint name
-  - Press deploy
+  - Press *Deploy*
     
     ![image](https://github.com/ChaturaW/SageMakerTrainer/assets/35030369/af042c66-2c13-4044-891a-667d99d214d1)
 
