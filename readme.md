@@ -33,8 +33,8 @@
   - Run the notebook
   
   Test the deployment of the models
-  - If deployed via Jumpstart - Test the deployment by running the example notebook given by Jumpstart 
-  - NOTE: The dependencies for the code will need to be installed:
+  - If deployed via Jumpstart - Test the deployment by running the example notebook given by Jumpstart    
+  - Irrespective of the deployment method the dependencies for the code will need to be installed:
     
 
 
@@ -42,7 +42,9 @@
 - Open the System Terminal from AWS SageMaker studio
 - move inside the app folder
 - install streamlit (`pip install streamlit`)
-- similarly install sagemaker, boto3, json
-- run the following command: $ streamlit run app.py 
-- run with the following argument if want to apply changes on the fly:  $ streamlit run app.py --server.runOnSave true
-- Open the URL: https://<sagemaker_domain_id>.studio.ap-southeast-2.sagemaker.aws/jupyter/default/proxy/8501/ e.g. https://d-rqgx355zgpuj.studio.ap-southeast-2.sagemaker.aws/jupyter/default/proxy/8501/
+- similarly install `sagemaker`, `boto3`, `json`
+- run the following command: `$ streamlit run app.py` 
+- run with the following argument if want to apply changes on the fly:  `$ streamlit run app.py --server.runOnSave true`
+- Open the URL:
+  `https://<sagemaker_domain_id>.studio.ap-southeast-2.sagemaker.aws/jupyter/default/proxy/8501/`
+  e.g. `https://d-rqgx355zgpuj.studio.ap-southeast-2.sagemaker.aws/jupyter/default/proxy/8501/`
