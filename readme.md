@@ -23,17 +23,18 @@
   - Press deploy
     
     ![image](https://github.com/ChaturaW/SageMakerTrainer/assets/35030369/af042c66-2c13-4044-891a-667d99d214d1)
+
   
   Deploy a model using a notebook:
-  - 
+  - Open the notebook https://github.com/ChaturaW/SageMakerTrainer/blob/main/Notebooks/text2text-flan-t5-large.ipynb
+  - Change the necessary variables to select the model for deployment
+  - Select the python 3.9 custom kernel as the notebook kernel
+  - Run the notebook
   
-- Test the deployment of the models
+  Test the deployment of the models
   - If deployed via Jumpstart - Test the deployment by running the example notebook given by Jumpstart 
-  - Will have to install the dependencies such:
-    - langchain
-    - sagemaker
-    - bs4
-    - faiss-cpu
+  - NOTE: The dependencies for the code will need to be installed:
+    
 
 
 # Running the steamlit app inside SageMaker studio
