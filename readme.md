@@ -1,4 +1,4 @@
-#Installation & configuration
+# Installation & configuration
 
 - Create a domain
 - Create a user profile in SageMaker studio under the domain
