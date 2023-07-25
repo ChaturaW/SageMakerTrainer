@@ -1,8 +1,8 @@
 # Installation & configuration
 
-- Create a domain
+- Create a domain in AWS SageMaker
 - Create a user profile in SageMaker studio under the domain
-- Create a custom notebook kernel. This is for creating a python 3.9 kernel:
+- Create a custom notebook kernel. This is for creating a python 3.9 kernel (This step is important as some models will not work in the default python version comes with the notebook):
   - conda create --name <ENVIRONMENT_NAME> python=3.9
   - conda activate <ENVIRONMENT_NAME>
   - conda install ipykernel
@@ -10,8 +10,21 @@
 
 
 # Model deployment
-- Deploy the model for embedding
+
+- Deploy the model for embedding  
 - Deploy the LLM
+  NOTE: The models can be deployed either from Jumpstart or using code (studio notebook/script).
+
+  Deploy from Jumpstart:
+  - Open Amazon SageMaker Studio
+  - Open *SageMaker Jumpstart > Models, notebooks, solutions* from the left menu
+  - Select the model for deployment
+  - Select the instance type, endpoint name
+  - Press deploy
+    ![image](https://github.com/ChaturaW/SageMakerTrainer/assets/35030369/af042c66-2c13-4044-891a-667d99d214d1)
+
+  - The example notebook provided by Jumpstart as the model is deployed can be used for testing the deployment
+  
 - Test the deployment of the models
   - If deployed via Jumpstart - Test the deployment by running the example notebook given by Jumpstart 
   - Will have to install the dependencies such:
